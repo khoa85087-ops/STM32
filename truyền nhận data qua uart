@@ -45,11 +45,9 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
   // biến bạn cần dùng
-#define FRAME_MAX_SIZE  32
 volatile uint8_t rx_byte;
-volatile uint8_t frame[FRAME_MAX_SIZE];
-volatile uint8_t frame_idx = 0;
-volatile int8_t  last_button = 0;  // chỉ lưu nút mới nhất
+volatile uint8_t key = 0;
+volatile uint8_t last_button=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
